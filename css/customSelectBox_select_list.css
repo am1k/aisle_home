@@ -1,0 +1,40 @@
+.search-box .customSelect .caret {
+    background: url(arrow-down.png) no-repeat right center;
+    width: 11px;
+    height: 6px;
+    border-top: none;
+    margin-top: -2px;
+}
+.search-box .customSelect .selectedValue {
+    background-color: #d5d5d5;
+    background-image: linear-gradient(to bottom, #d5d5d5, #d5d5d5);
+    border: 1px solid #d5d5d5;
+}
+.search-box .customSelect .selectList {
+    margin: 0;
+    padding: 0;
+}
+.search-box .customSelect .selectList dl {
+    background: #d5d5d5;
+}
+.search-box .customSelect .selected {
+    color: #333 ;
+    background-color: inherit;
+    background-image: inherit;
+}
+.search-box .customSelect dd {
+    border-top: 1px solid #666;
+    border-bottom: 1px solid #666;
+}
+.search-box .customSelect .selectList dd.hovered {
+    background: #333;
+    color: #fff;
+}
+.search-box .customSelect .jspDrag {
+    background-image: none;
+    background-color: #f2f2f2;
+    opacity: 0.6;
+}
+.search-box .customSelect {
+    margin: 14px 0 17px 12px;
+}

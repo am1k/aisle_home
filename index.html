@@ -1,0 +1,546 @@
+<!doctype html>
+<head>
+    <meta charset="utf-8">
+    <title></title>
+    <meta name="keywords" content=""/>
+    <meta name="description" charset=""/>
+    <link rel="stylesheet" href="style.css" type="text/css"/>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script src="js/jScrollPane.js"></script>
+    <script src="js/jquery.mousewheel.js"></script>
+    <script src="js/SelectBox.js"></script>
+    <link rel="stylesheet" href="css/jquery.jscrollpane.css" />
+    <link rel="stylesheet" href="css/customSelectBox.css" />
+    <link rel="stylesheet" href="css/customSelectBox_select_list.css" />
+    <link rel="stylesheet" href="css/customSelectBox_search_resalt.css" />
+    <link rel="stylesheet" href="css/example.css" />
+    <script>
+        $(document).ready(function() {
+            $(".select-list").each(function() {
+                var sb = new SelectBox({
+                    selectbox: $(this),
+                    height: 150,
+                    width: 100
+                });
+            });
+            $(".title-select").each(function() {
+                var sb = new SelectBox({
+                    selectbox: $(this),
+                    height: 150,
+                    width: 150
+                });
+            });
+
+        });
+    </script>
+</head>
+<body>
+<div id="wrapper">
+    <div id="header">
+        <div id="logo"><a href="#"><img src="img/logo.png"></a></div>
+            <ul class="button-list">
+                <li class="nav-item"><a href="#"><img src="img/user.png"></a> </li>
+                <li class="nav-item"><a href="#"><img src="img/message.png"></a> </li>
+                <li class="nav-item"><a href="#"><img src="img/bell.png"></a> </li>
+                <li class="nav-item"><a href="#"><p>Able</p><img src="img/arrow.png"></a></li>
+            </ul>
+        <div class="nav-menu">
+                <ul class="menu">
+                    <li class="menu-item"><a href="#">Find</a> </li>
+                    <li class="menu-item"><a href="#">Bookmarks</a></li>
+                    <li class="menu-item"><a href="#">Connections</a></li>
+                    <li class="menu-item"><a href="#">Notifications</a></li>
+                    <li class="menu-item"><a href="#">Messages</a></li>
+                    <li class="menu-item"><a href="#">Invites</a></li>
+                </ul>
+            <div id="search">
+                <input id="searchbox" type="text" placeholder="Search By ID" autocomplete="off" >
+            </div>
+        </div>
+    </div>
+    <div id="left-sidebar">
+        <div class="search-box">
+            <h3>SEARCH</h3>
+            <ul class="section-list">
+                <li class="search-item"><a href="#">Women</a></li>
+                <li class="search-item"><a href="#">Men</a></li>
+            </ul>
+        </div>
+        <div class="search-box">
+            <h3> Age</h3>
+                <select name="select-list" class="select-list">
+                    <option>From</option>
+                    <option>From</option>
+                    <option>From</option>
+                    <option>From</option>
+                    <option>From</option>
+                    <option>From</option>
+                    <option>From</option>
+                    <option>From</option>
+                    <option>From</option>
+                    <option>From</option>
+                    <option>From</option>
+                    <option>From</option>
+                </select>
+                <select name="select-list" class="select-list">
+                    <option>To</option>
+                    <option>To</option>
+                    <option>To</option>
+                    <option>To</option>
+                    <option>To</option>
+                    <option>To</option>
+                </select>
+       </div>
+        <div class="search-box">
+            <h3>Height</h3>
+                <select name="select-list" class="select-list">
+                    <option>From</option>
+                    <option>From</option>
+                    <option>From</option>
+                    <option>From</option>
+                    <option>From</option>
+                    <option>From</option>
+                    <option>From</option>
+                    <option>From</option>
+                    <option>From</option>
+                    <option>From</option>
+                    <option>From</option>
+                    <option>From</option>
+                    <option>From</option>
+                    <option>From</option>
+                </select>
+                <select name="select-list" class="select-list">
+                    <option>To</option>
+                    <option>To</option>
+                    <option>To</option>
+                    <option>To</option>
+                    <option>To</option>
+                </select>
+        </div>
+        <div class="search-box">
+             <h3>STATUS</h3>
+            <ul class="section-list">
+                <li><a href="#">Any</a></li>
+                <li><a href="#">Single</a></li>
+                <li><a href="#">Divorced</a></li>
+                <li><a href="#">Windowed</a></li>
+            </ul>
+        </div>
+        <div class="search-box">
+            <h3>MOTHER TONGUE</h3>
+            <ul class="section-list">
+                <li><a href="#">Any</a></li>
+                <li><a href="#">English</a></li>
+                <li><a href="#">Hindi</a></li>
+                <li><a href="#">Malayam</a></li>
+                <li><a href="#">Tamil</a></li>
+            </ul>
+                <div class="button-more"><a href="#"><p>MORE</p></a><a href="#"><img src="img/arrow-down.png"></a> </div>
+        </div>
+        <div class="search-box">
+            <h3>RELIGION</h3>
+            <ul class="section-list">
+                <li><a href="#">Any</a></li>
+                <li><a href="#">Christian</a></li>
+                <li><a href="#">Hindu</a></li>
+                <li><a href="#">Moslem</a></li>
+                <li><a href="#">Spiritual</a></li>
+            </ul>
+            <div class="button-more"><a href="#"><p>MORE</p></a><a href="#"><img src="img/arrow-down.png"></a> </div>
+        </div>
+        <div class="search-box">
+            <h3>COUNTRY</h3>
+            <ul class="section-list">
+                <li><a href="#">Any</a></li>
+                <li><a href="#">India</a></li>
+                <li><a href="#">United Arab Emirates</a></li>
+                <li><a href="#">United Kingdom</a></li>
+                <li><a href="#">United States of America</a></li>
+            </ul>
+            <div class="button-more"><a href="#"><p>MORE</p></a><a href="#"><img src="img/arrow-down.png"></a> </div>
+        </div>
+        <div class="search-box">
+            <h3>STATE</h3>
+            <ul class="section-list">
+                <li><a href="#">Any</a></li>
+                <li><a href="#">Delhi</a></li>
+                <li><a href="#">Mumbai</a></li>
+                <li><a href="#">Kerala</a></li>
+                <li><a href="#">Los Angeles</a></li>
+            </ul>
+            <div class="button-more"><a href="#"><p>MORE</p></a><a href="#"><img src="img/arrow-down.png"></a> </div>
+        </div>
+        <div class="search-box">
+            <h3>INCOME</h3>
+            <ul class="section-list">
+                <li><a href="#">Any</a></li>
+                <li><a href="#">INR 30,000 - 60,000</a></li>
+                <li><a href="#">INR 60,000 - 90,000</a></li>
+                <li><a href="#">INR 90,000 - 120,000</a></li>
+                <li><a href="#">INR 120,000 - 150,000</a></li>
+                <li><a href="#">INR 150,000+</a></li>
+            </ul>
+            <div class="button-more"><a href="#"> <p>MORE</p></a><a href="#"><img src="img/arrow-down.png"></a> </div>
+        </div>
+
+    </div>
+    <div id="content">
+        <div class="title-result">
+        <h2>Women</h2>
+                <select  name="title-select" class="title-select">
+                    <option>Random</option>
+                    <option>Random</option>
+                    <option>Random</option>
+                    <option>Random</option>
+                    <option>Random</option>
+                    <option>Random</option>
+                    <option>Random</option>
+                    <option>Random</option>
+                    <option>Random</option>
+                </select>
+        </div>
+        <div class="main-content">
+            <ul class="content-search">
+                <li class="content-search-result">
+                <div class="content-image"><img src="img/avatar1.jpg">
+                    <div class="content-arrow">
+                        <button class="arrow-images"><img src="img/line-popup-arrow.png"></button></div>
+                </div>
+                <div class="bookmark-button">
+                    <button class="bookmark">Bookmark</button>
+                    <div class="unbookmark-button"><img src="img/arrow-button-blue-up.png">
+                        <button class="unbookmark">Unbookmark</button>
+                    </div>
+                </div>
+                <div class="content-text">
+                    <H4>UAE, Dubai</H4>
+                    <p class="text">26 Years | Malayalam</p>
+                    <p>4 Feet 11 Inches</p>
+                    <p class="text">Christian | Roman Catholic</p>
+                    <div class="connect-plus">
+                        <button class="message-button">Message</button>
+                        <div class="message-hover"><img src="img/arrow-button-red-up.png">
+                            <button class="disconnect-button">Disconnect</button>
+                        </div>
+                    </div>
+                </div>
+                </li>
+                <li class="content-search-result">
+                    <div class="content-image"><img src="img/avatar1.jpg">
+                        <div class="content-arrow">
+                            <button class="arrow-images"><img src="img/line-popup-arrow.png"></button></div>
+                    </div>
+                    <div class="bookmark-button">
+                        <button class="bookmark">Bookmark</button>
+                        <div class="unbookmark-button"><img src="img/arrow-button-blue-up.png">
+                            <button class="unbookmark">Unbookmark</button>
+                        </div>
+                    </div>
+                    <div class="content-text">
+                        <H4>UAE, Dubai</H4>
+                        <p class="text">26 Years | Malayalam</p>
+                        <p>4 Feet 11 Inches</p>
+                        <p class="text">Christian | Roman Catholic</p>
+                        <div class="connect-plus">
+                            <button class="message-button">Message</button>
+                            <div class="message-hover"><img src="img/arrow-button-red-up.png">
+                                <button class="disconnect-button">Disconnect</button>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="content-search-result">
+                    <div class="content-image"><img src="img/avatar1.jpg">
+                        <div class="content-arrow">
+                            <button class="arrow-images"><img src="img/line-popup-arrow.png"></button></div>
+                    </div>
+                    <div class="bookmark-button">
+                        <button class="bookmark">Bookmark</button>
+                        <div class="unbookmark-button"><img src="img/arrow-button-blue-up.png">
+                            <button class="unbookmark">Unbookmark</button>
+                        </div>
+                    </div>
+                    <div class="content-text">
+                        <H4>UAE, Dubai</H4>
+                        <p class="text">26 Years | Malayalam</p>
+                        <p>4 Feet 11 Inches</p>
+                        <p class="text">Christian | Roman Catholic</p>
+                        <div class="connect-plus">
+                            <button class="message-button">Message</button>
+                            <div class="message-hover"><img src="img/arrow-button-red-up.png">
+                                <button class="disconnect-button">Disconnect</button>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="content-search-result">
+                    <div class="content-image"><img src="img/avatar1.jpg">
+                        <div class="content-arrow">
+                            <button class="arrow-images"><img src="img/line-popup-arrow.png"></button></div>
+                    </div>
+                    <div class="bookmark-button">
+                        <button class="bookmark">Bookmark</button>
+                        <div class="unbookmark-button"><img src="img/arrow-button-blue-up.png">
+                            <button class="unbookmark">Unbookmark</button>
+                        </div>
+                    </div>
+                    <div class="content-text">
+                        <H4>UAE, Dubai</H4>
+                        <p class="text">26 Years | Malayalam</p>
+                        <p>4 Feet 11 Inches</p>
+                        <p class="text">Christian | Roman Catholic</p>
+                        <div class="connect-plus">
+                            <button class="message-button">Message</button>
+                            <div class="message-hover"><img src="img/arrow-button-red-up.png">
+                                <button class="disconnect-button">Disconnect</button>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="content-search-result">
+                    <div class="content-image"><img src="img/avatar1.jpg">
+                        <div class="content-arrow">
+                            <button class="arrow-images"><img src="img/line-popup-arrow.png"></button></div>
+                    </div>
+                    <div class="bookmark-button">
+                        <button class="bookmark">Bookmark</button>
+                        <div class="unbookmark-button"><img src="img/arrow-button-blue-up.png">
+                            <button class="unbookmark">Unbookmark</button>
+                        </div>
+                    </div>
+                    <div class="content-text">
+                        <H4>UAE, Dubai</H4>
+                        <p class="text">26 Years | Malayalam</p>
+                        <p>4 Feet 11 Inches</p>
+                        <p class="text">Christian | Roman Catholic</p>
+                        <div class="connect-plus">
+                            <button class="message-button">Message</button>
+                            <div class="message-hover"><img src="img/arrow-button-red-up.png">
+                                <button class="disconnect-button">Disconnect</button>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="content-search-result">
+                    <div class="content-image"><img src="img/avatar1.jpg">
+                        <div class="content-arrow">
+                            <button class="arrow-images"><img src="img/line-popup-arrow.png"></button></div>
+                    </div>
+                    <div class="bookmark-button">
+                        <button class="bookmark">Bookmark</button>
+                        <div class="unbookmark-button"><img src="img/arrow-button-blue-up.png">
+                            <button class="unbookmark">Unbookmark</button>
+                        </div>
+                    </div>
+                    <div class="content-text">
+                        <H4>UAE, Dubai</H4>
+                        <p class="text">26 Years | Malayalam</p>
+                        <p>4 Feet 11 Inches</p>
+                        <p class="text">Christian | Roman Catholic</p>
+                        <div class="connect-plus">
+                            <button class="message-button">Message</button>
+                            <div class="message-hover"><img src="img/arrow-button-red-up.png">
+                                <button class="disconnect-button">Disconnect</button>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="content-search-result">
+                    <div class="content-image"><img src="img/avatar1.jpg">
+                        <div class="content-arrow">
+                            <button class="arrow-images"><img src="img/line-popup-arrow.png"></button></div>
+                    </div>
+                    <div class="bookmark-button">
+                        <button class="bookmark">Bookmark</button>
+                        <div class="unbookmark-button"><img src="img/arrow-button-blue-up.png">
+                            <button class="unbookmark">Unbookmark</button>
+                        </div>
+                    </div>
+                    <div class="content-text">
+                        <H4>UAE, Dubai</H4>
+                        <p class="text">26 Years | Malayalam</p>
+                        <p>4 Feet 11 Inches</p>
+                        <p class="text">Christian | Roman Catholic</p>
+                        <div class="connect-plus">
+                            <button class="message-button">Message</button>
+                            <div class="message-hover"><img src="img/arrow-button-red-up.png">
+                                <button class="disconnect-button">Disconnect</button>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="content-search-result">
+                    <div class="content-image"><img src="img/avatar1.jpg">
+                        <div class="content-arrow">
+                            <button class="arrow-images"><img src="img/line-popup-arrow.png"></button></div>
+                    </div>
+                    <div class="bookmark-button">
+                        <button class="bookmark">Bookmark</button>
+                        <div class="unbookmark-button"><img src="img/arrow-button-blue-up.png">
+                            <button class="unbookmark">Unbookmark</button>
+                        </div>
+                    </div>
+                    <div class="content-text">
+                        <H4>UAE, Dubai</H4>
+                        <p class="text">26 Years | Malayalam</p>
+                        <p>4 Feet 11 Inches</p>
+                        <p class="text">Christian | Roman Catholic</p>
+                        <div class="connect-plus">
+                            <button class="message-button">Message</button>
+                            <div class="message-hover"><img src="img/arrow-button-red-up.png">
+                                <button class="disconnect-button">Disconnect</button>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="content-search-result">
+                    <div class="content-image"><img src="img/avatar1.jpg">
+                        <div class="content-arrow">
+                            <button class="arrow-images"><img src="img/line-popup-arrow.png"></button></div>
+                    </div>
+                    <div class="bookmark-button">
+                        <button class="bookmark">Bookmark</button>
+                        <div class="unbookmark-button"><img src="img/arrow-button-blue-up.png">
+                            <button class="unbookmark">Unbookmark</button>
+                        </div>
+                    </div>
+                    <div class="content-text">
+                        <H4>UAE, Dubai</H4>
+                        <p class="text">26 Years | Malayalam</p>
+                        <p>4 Feet 11 Inches</p>
+                        <p class="text">Christian | Roman Catholic</p>
+                        <div class="connect-plus">
+                            <button class="message-button">Message</button>
+                            <div class="message-hover"><img src="img/arrow-button-red-up.png">
+                                <button class="disconnect-button">Disconnect</button>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="content-search-result">
+                    <div class="content-image"><img src="img/avatar1.jpg">
+                        <div class="content-arrow">
+                            <button class="arrow-images"><img src="img/line-popup-arrow.png"></button></div>
+                    </div>
+                    <div class="bookmark-button">
+                        <button class="bookmark">Bookmark</button>
+                        <div class="unbookmark-button"><img src="img/arrow-button-blue-up.png">
+                            <button class="unbookmark">Unbookmark</button>
+                        </div>
+                    </div>
+                    <div class="content-text">
+                        <H4>UAE, Dubai</H4>
+                        <p class="text">26 Years | Malayalam</p>
+                        <p>4 Feet 11 Inches</p>
+                        <p class="text">Christian | Roman Catholic</p>
+                        <div class="connect-plus">
+                            <button class="message-button">Message</button>
+                            <div class="message-hover"><img src="img/arrow-button-red-up.png">
+                                <button class="disconnect-button">Disconnect</button>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="content-search-result">
+                    <div class="content-image"><img src="img/avatar1.jpg">
+                        <div class="content-arrow">
+                            <button class="arrow-images"><img src="img/line-popup-arrow.png"></button></div>
+                    </div>
+                    <div class="bookmark-button">
+                        <button class="bookmark">Bookmark</button>
+                        <div class="unbookmark-button"><img src="img/arrow-button-blue-up.png">
+                            <button class="unbookmark">Unbookmark</button>
+                        </div>
+                    </div>
+                    <div class="content-text">
+                        <H4>UAE, Dubai</H4>
+                        <p class="text">26 Years | Malayalam</p>
+                        <p>4 Feet 11 Inches</p>
+                        <p class="text">Christian | Roman Catholic</p>
+                        <div class="connect-plus">
+                            <button class="message-button">Message</button>
+                            <div class="message-hover"><img src="img/arrow-button-red-up.png">
+                                <button class="disconnect-button">Disconnect</button>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="content-search-result">
+                    <div class="content-image"><img src="img/avatar1.jpg">
+                        <div class="content-arrow">
+                            <button class="arrow-images"><img src="img/line-popup-arrow.png"></button></div>
+                    </div>
+                    <div class="bookmark-button">
+                        <button class="bookmark">Bookmark</button>
+                        <div class="unbookmark-button"><img src="img/arrow-button-blue-up.png">
+                            <button class="unbookmark">Unbookmark</button>
+                        </div>
+                    </div>
+                    <div class="content-text">
+                        <H4>UAE, Dubai</H4>
+                        <p class="text">26 Years | Malayalam</p>
+                        <p>4 Feet 11 Inches</p>
+                        <p class="text">Christian | Roman Catholic</p>
+                        <div class="connect-plus">
+                            <button class="message-button">Message</button>
+                            <div class="message-hover"><img src="img/arrow-button-red-up.png">
+                                <button class="disconnect-button">Disconnect</button>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+
+
+            </ul>
+            <div class="pagination">
+                <ul class="page">
+                    <li><span class="left-arrow"><a href="#"><img src="img/arrow-left.png"></a> </span></li>
+                    <li><a href="#">1</a> </li>
+                    <li><a href="#">2</a> </li>
+                    <li><a href="#">3</a> </li>
+                    <li><a href="#">4</a> </li>
+                    <li><a href="#">5</a> </li>
+                    <li><span class="right-arrow"><a href="#"><img src="img/arrow-right.png"></a></span></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+<div id="footer">
+    <div class="promo-box">
+        <img src="img/settings-alt.png"> <b>How it Works</b> <br>
+        <p>This is Photoshop's version of Lorem Ipsum. Proin gravida nibh vel velft auctor akasde</p>
+    </div>
+    <div class="promo-box">
+        <img src="img/users-box.png"><b> How it Works</b> <br>
+        <p>This is Photoshop's version of Lorem Ipsum. Proin gravida nibh vel velft auctor akasde</p>
+    </div>
+    <div class="promo-box">
+        <img src="img/note-book.png"><b> How it Works</b> <br>
+        <p>This is Photoshop's version of Lorem Ipsum. Proin gravida nibh vel velft auctor akasde</p>
+    </div>
+    <div class="footer-bottom">
+            <ul class="footer-nav">
+               <li><a href="#"> Terms</a></li>
+               <li><a href="#"> Privacy</a></li>
+               <li><a href="#"> Contact</a></li>
+            </ul>
+        <div class="social-icons">
+            <ul class="footer-icons">
+                <li><a href="#"><img src="img/facebook.png"> </a> </li>
+                <li><a href="#"><img src="img/twitter.png"> </a> </li>
+                <li><a href="#"><img src="img/pinterest.png"> </a> </li>
+                <li><a href="#"><img src="img/linked-in.png"> </a> </li>
+                <li><a href="#"><img src="img/g+.png"> </a> </li>
+                <li><a href="#"><img src="img/instagram.png"> </a> </li>
+                <li><a href="#"><img src="img/youtube.png"> </a> </li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+</div>
+
+
+</body>
+
+
