@@ -279,7 +279,7 @@ body {
     color: #fff;
     margin: 10px;
 }
-.bookmark-button:hover  .unbookmark-button{
+.bookmark-button:hover .unbookmark-button {
     display: block;
 }
 .connect-plus {
