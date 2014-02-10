@@ -16,6 +16,7 @@
 }
 .search-box .customSelect .selectList dl {
     background: #d5d5d5;
+    height: 142px;
 }
 .search-box .customSelect .selected {
     color: #333 ;
