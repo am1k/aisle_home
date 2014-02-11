@@ -207,12 +207,10 @@ body {
     position: relative;
 }
 .bookmark-button {
-    background-image: url("img/overlay-bar.png");
-    width: 236px;
-    height: 40px;
-    margin-top: -40px;
+    height: 100px;
     display: none;
-    float: left;
+    float: right;
+    margin: 135px 110px 0 0;
     background-color: transparent;
     border-radius: 2px;
 }
@@ -432,6 +430,7 @@ body {
     border-top: 1px solid #bfbfbf ;
     padding: 13px;
     overflow: hidden;
+    margin-top: 6px;
     float: left;
     width: 210px;
 }
