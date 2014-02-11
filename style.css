@@ -209,7 +209,7 @@ body {
 .bookmark-button {
     background-image: url("img/overlay-bar.png");
     width: 236px;
-    height: 100px;
+    height: 40px;
     margin-top: -40px;
     display: none;
     float: left;
@@ -431,7 +431,6 @@ body {
 #content li:hover .content-text {
     border-top: 1px solid #bfbfbf ;
     padding: 13px;
-    margin-top: -54px;
     overflow: hidden;
     float: left;
     width: 210px;
