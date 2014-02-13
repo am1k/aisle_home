@@ -207,12 +207,26 @@ body {
     position: relative;
 }
 .bookmark-button {
-    height: 100px;
+    height: 40px;
+    width: 236px;
     display: none;
     float: right;
-    margin: 135px 110px 0 0;
-    background-color: transparent;
+    margin: 135px 0px 0 0;
+    background-color: #fff;
     border-radius: 2px;
+    opacity: 0.6;
+
+}
+.first {
+    position: absolute;
+    overflow: hidden;
+    top: 195px;
+    right: 110px;
+    z-index: 100;
+
+}
+.first:hover .unbookmark-button {
+    display: block;
 }
 .bookmark-button img {
     float: left;
@@ -229,6 +243,7 @@ body {
     background-repeat: no-repeat;
     background-position:97px 13px ;
 }
+
 .bookmark:hover {
     width: 120px;
     height: 32px;
