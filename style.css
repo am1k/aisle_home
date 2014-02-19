@@ -678,7 +678,10 @@ body {
 .content-search li:hover {
     background: #f3f3f3;
 }
-
+.divide-line {
+    clear: both;
+    height: 1px;
+}
 .pagination {
     text-align: center;
 }
