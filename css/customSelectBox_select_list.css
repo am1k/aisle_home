@@ -24,7 +24,7 @@
     background-image: inherit;
 }
 .search-box .customSelect dd {
-    border-top: 1px solid #666;
+    border-top: 1px solid transparent;
     border-bottom: 1px solid #666;
 }
 .search-box .customSelect .selectList dd.hovered {

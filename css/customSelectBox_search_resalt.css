@@ -23,7 +23,7 @@
     background-image: inherit;
 }
 .title-result .customSelect dd {
-    border-top: 1px solid #666;
+    border-top: 1px solid transparent;
     border-bottom: 1px solid #666;
 }
 .title-result .customSelect .selectList dd.hovered {
