@@ -334,6 +334,8 @@ body {
 }
 #sidebar a {
     font-size: 12px;
+    display: inline-block;
+    width: 100%;
 }
 #sidebar h3 {
     padding: 10px 0 0 12px;
@@ -376,6 +378,7 @@ body {
     float: right;
     padding-right: 11px;
     width: 55px;
+    cursor: pointer;
     padding-bottom: 10px;
 }
 .show-more:after{
@@ -385,13 +388,12 @@ body {
     height: 7px;
     background-repeat: no-repeat;
     background-position: 50% 50%;
-    margin-left: 5px;
+    margin-left: 3px;
     background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA8AAAAICAQAAACM2m15AAAAcElEQVQI12MIXRvqxoAVhIqEJjCEmoQ+Cw3EIikVei20HcTQCX0SGosmqRh6L7QaxlENvR+agSSpEfo4NBdZtVzo9dAyKNsQaF0Cul3ioRdCW4C0VejL0BBsLhUKPRm6OvR1qBcDDq/whx4MdUAWAQCweyGWlZHYkgAAAABJRU5ErkJggg==");
 }
 .show-more p {
     float: left;
     color: #666;
-    cursor: pointer;
     margin-top: 2px;
 }
 #content {
