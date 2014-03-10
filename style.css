@@ -15,6 +15,10 @@ body {
     height: 42px;
     margin-top: 20px;
 }
+.logo{
+    display: inline-block;
+    height: 100%;
+}
 .events{
     float: right;
     margin-top: 20px;
@@ -286,6 +290,9 @@ body {
 .arrow-drop:hover .drop-popover-able {
     display: block;
 }
+.incoming-name {
+    font-weight: bold;
+}
 .menu {
     float: left;
     margin-top: 5px;
@@ -333,7 +340,7 @@ body {
     margin-right: 12px;
 }
 #sidebar a {
-    font-size: 12px;
+    font-size: 11px;
     display: inline-block;
     width: 100%;
 }
@@ -761,7 +768,8 @@ body {
     float: left;
     padding-top: 5px;
 }
-.boxes b {
+.boxes span {
+    font-weight: bold;
     float: left;
     margin: 5px 0 0 7px;
     font-size: 20px;

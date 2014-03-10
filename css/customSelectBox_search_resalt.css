@@ -1,9 +1,9 @@
 .title-result .customSelect .caret {
-    background: url(arrow-down.png) no-repeat right center;
-    width: 11px;
-    height: 6px;
+    background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA8AAAAICAQAAACM2m15AAAAcElEQVQI12MIXRvqxoAVhIqEJjCEmoQ+Cw3EIikVei20HcTQCX0SGosmqRh6L7QaxlENvR+agSSpEfo4NBdZtVzo9dAyKNsQaF0Cul3ioRdCW4C0VejL0BBsLhUKPRm6OvR1qBcDDq/whx4MdUAWAQCweyGWlZHYkgAAAABJRU5ErkJggg==) no-repeat right center;
+    width: 15px;
+    height: 8px;
     border-top: none;
-    margin-top: -2px;
+    margin-top: -5px;
 }
 .title-result .customSelect .selectedValue {
     background-color: #d5d5d5;
@@ -32,7 +32,7 @@
 }
 .title-result .customSelect .jspDrag {
     background-image: none;
-    background-color: #f2f2f2;
+    width: 5px;
     opacity: 0.6;
 }
 .title-result .customSelect {
